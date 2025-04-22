@@ -1,0 +1,61 @@
+@charset "utf-8";
+@font-face{
+        font-family: 'NanumSquare Neo';
+        font-weight: normal;
+        font-style: normal;
+        src: url(../font/NanumSquareNeoTTF-bRg.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'NanumSquare Neo';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../font/NanumSquareNeoTTF-cBd.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'NanumSquare Neo';
+    font-weight: 300;
+    font-style: normal;
+    src: url(../font/NanumSquareNeoTTF-aLt.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'NanumSquare Neo';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../font/NanumSquareNeoTTF-dEb.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'NanumSquare Neo';
+    font-weight: 900;
+    font-style: normal;
+    src: url(../font/NanumSquareNeoTTF-eHv.woff) format('woff');
+}
+
+p {
+    font-family: 'NanumSquare Neo';
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+/*     --main-font-family: ''; */
+    --main-color: #00A5B9;
+    --main-color: #D21E00;
+    --main-color: #ffffff;
+    --main-color: #000000;
+    --main-color: #FDCD00;
+    --main-color: #006937;
+    --main-color: #4B3531;
+
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
