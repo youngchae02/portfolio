@@ -232,7 +232,7 @@ $(function () {
         $(".right_box .box." + className).addClass("on");
     });
 
-    var swiper = new Swiper(".web_cards", {
+    let swiper = new Swiper(".web_cards", {
         effect: "coverflow",
         grabCursor: true,
         loop: true,
