@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rara company</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap " data-scroll-container>
+        <header id="header">
+            <h1><a href="#"><span class="material-symbols-outlined">
+                        draw
+                    </span>fwee</a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">PRODUCTS</a>
+                        <ul>
+                            <li><a href="#">Lips & Cheeks</a></li>
+                            <li><a href="#">Eyes</a></li>
+                            <li><a href="#">Face</a></li>
+                            <li><a href="#">New & Best</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MOOD</a>
+                        <ul>
+                            <li><a href="#">Mood Collection</a></li>
+                            <li><a href="#">Personal Tone Finder</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BRAND</a>
+                        <ul>
+                            <li><a href="#">Brand Story</a></li>
+                            <li><a href="#">Vision & Value</a></li>
+                            <li><a href="#">Pop-up Store</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">COMMUNITY</a>
+                        <ul>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Fwee Friends</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong><span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div><!-- //.sel -->
+            </div><!-- //.r_menu -->
+        </header>
+        <main>
+            <div class="custom_cursor "></div><!-- //.custom_cursor -->
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1"><a href="https://fwee.kr/product/%ED%93%8C-%EC%BF%A0%EC%85%98-%EA%B8%80%EB%9E%98%EC%8A%A4-%EB%82%B4%EC%B6%94%EB%9F%B4-5-colors/170/category/53/display/1/">
+                                <div class="tit">
+                                    <p>natural</p>
+                                    <h2>fwee CUSHION GLASS NATURAL<br>SPF50+PA+++</h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main2"><a href="https://fwee.kr/product/%ED%93%8C-3d-%EB%B3%BC%EB%A5%98%EB%B0%8D-%EA%B8%80%EB%A1%9C%EC%8A%A4-17-colors/167/category/30/display/1/">
+                                <div class="tit">
+                                    <p>Blossom Lips</p>
+                                    <h2>3D Voluming</h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main3"><a href="https://fwee.kr/product/%ED%93%8C-%EA%B8%80%EB%A6%AC%EC%B8%A0-%EC%8A%A4%ED%86%A4-%ED%95%98%EC%9D%B4%EB%9D%BC%EC%9D%B4%ED%84%B0-12colors/206/category/53/display/1/">
+                                <div class="tit">
+                                    <p>Glitch Glow</p>
+                                    <h2>Oops! All Glitch</h2>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div><!-- //.main_slide_wrap -->
+
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num"><span class="swiper-pagination-current">01</span> / 03</div>
+
+                    <!-- 중앙 세로라인(진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div><!-- //.vertical-pagination -->
+            </section><!-- //.main_visual -->
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit"><span>센스</span>에 <span>미쳐버린</span> <span>디자인</span></strong>
+                    <b class="tit"><span>유니크함</span>으로 <span>지구 정복</span> 중</b>
+                    <em class="tit"><span>fwee</span>가 하면 달라요</em>
+                </h2>
+            </section>
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">fwee top3</div>
+                        <ul class='list'>
+                            <li>
+                                피부 위에 감성 한 방울, 당신만의 아름다움을 완성합니다.
+                            </li>
+                            <li>
+                                내일의 뷰티를 오늘, fwee와 함께 경험하세요.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">TOP 3</h2>
+                        <p>이 구역 감성폭발 맛집은 fwee<br>
+                            fwee가 찢은 디자인만 모아봤지 뭐야
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>푸딩팟</h3>
+                                    <p>fwee 립앤치크<br>블러리 푸딩팟</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>젤리팟</h3>
+                                    <p>fwee 립앤치크<br>글로이 젤리팟</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>아이 팔레트</h3>
+                                    <p>fwee 포켓<br>블러리 아이팔레트</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">Mood Collection</h2>
+                    <p>당신의 톤에 맞춘 컬러 무드<br>
+                        지금 가장 인기 있는 컬렉션을 만나보세요.
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p1.png" alt=""></div>
+                        <div class="name">
+                            <strong>포켓 아이팔레트_cool</strong>
+                            <p>주머니 속 컬러 캔디,눈이랑 볼에 살짝 톡— 귀여움 묻어나는 블러셔 무드</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p2.png" alt=""></div>
+                        <div class="name">
+                            <strong>스트레이핏 틴트_cool</strong>
+                            <p>한 번의 터치로 쭉- 밀착,입술 선까지 또렷하게 잡아주는 컬러핏</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p3.png" alt=""></div>
+                        <div class="name">
+                            <strong>fwee 틴트 글래스_cool</strong>
+                            <p>장밋빛 무드에 한 방 쿵! 핑크빛 유혹이 퐁당 빠진 순간</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p4.png" alt=""></div>
+                        <div class="name">
+                            <strong>글래스 내추럴_cool</strong>
+                            <p>가볍게 톡, 내 피부인 듯 자연스럽게.빛만 남기고 결점은 사라지는 글래스 커버</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p5.png" alt=""></div>
+                        <div class="name">
+                            <strong>샤인 밤 글래스_warm</strong>
+                            <p>입술 위에 녹아드는 유리광,한 번만 발라도 반사판 켠 듯 반짝</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p6.png" alt=""></div>
+                        <div class="name">
+                            <strong>쿠션 스웨이드_warm</strong>
+                            <p>결 자국 없이 보송하게,스웨이드처럼 부드러운 마무리핏</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p7.png" alt=""></div>
+                        <div class="name">
+                            <strong>틴트 스웨이드_warm</strong>
+                            <p>보송하게 밀착되고, 부드럽게 물드는,입술 위에 남기는 벨벳 무드</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p8.png" alt=""></div>
+                        <div class="name">
+                            <strong>컬링 마스카라_warm</strong>
+                            <p>현장조사 및 샘플제작으로 다양한 산업분야의 특성에 따른 맞춤형 워크웨어 생산</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="business">
+                <div class="s_tit">
+                    <h2>fwee Lucky</h2>
+                    <p>기분 좋은 랜덤, fwee가 쏜다!<br>Lucky하게 예뻐지는 순간을 잡아봐</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b1.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span>Glitz Stone Highlighter</span>
+                                    <h3>글리츠 스톤<br>하이라이터</h3>
+                                    <p>오늘 운세는 반짝임,예쁨 가득 머금은 하이라이터, 누가 가져갈까?</p></p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#럭키드로우</li>
+                                            <li>#글리터광채</li>
+                                            <li>#반짝주의보</li>
+                                            <li>#예쁨뽑기</li>
+                                            <li>#랜덤하이라이터</li>
+                                            <li>#오늘운세_빛남</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b2.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span>More Mood Eye Palette</span>
+                                    <h3>모어무드<br>아이팔레트</h3>
+                                    <p>기분 따라 컬러도 달라져야 하잖아?<br>지금 네 무드에 딱 맞는 팔레트,랜덤으로 겟해봐!</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#럭키드로우</li>
+                                            <li>#무드팔레트</li>
+                                            <li>#랜덤픽</li>
+                                            <li>#오늘운세=핑크</li>
+                                            <li>#컬러에 반함</li>
+                                            <li>#예쁨은 운명</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b3.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span>Glass Foundation</span>
+                                    <h3>파운데이션<br>글래스</h3>
+                                    <p>빛나는 피부는 타고나는 게 아니라<br>럭키드로우로 뽑는 거지</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#럭키드로우</li>
+                                            <li>#글래스베이스</li>
+                                            <li>#촉촉광채</li>
+                                            <li>#파데운세</li>
+                                            <li>#운명톤픽</li>
+                                            <li>#피부결완성템</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b4.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span>fwee Tint Glass</span>
+                                    <h3>퓌 틴트<br>글래스</h3>
+                                    <p>맑고 촉촉한 유리빛 틴트, 오늘의 주인공은 누구?<br>운명처럼 만나는 당신의 글래스 컬러, 지금 뽑아보세요!</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#틴트럭키드로우</li>
+                                            <li>#유리빛발색</li>
+                                            <li>#랜덤컬러</li>
+                                            <li>#입술위유리조각</li>
+                                            <li>#당첨각</li>
+                                            <li>#예쁨주의보</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span>Mellow Dual Blusher</span>
+                                    <h3>멜로우 듀얼<br>블러셔</h3>
+                                    <p>말랑한 컬러 두 스푼<br>어울리는 건 운이 알려줄게, 블러셔 듀오 랜덤 픽!</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#럭키블러셔</li>
+                                            <li>#듀얼톤조합</li>
+                                            <li>#말랑무드</li>
+                                            <li>#랜덤컬러픽</li>
+                                            <li>#볼터치운세</li>
+                                            <li>#예쁨득템</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">No.1 fwee<br>
+                        Beauty Studio</h2>
+                    <p>당신의 일상에 색을 더하는 뷰티 브랜드, fwee.<br>
+                        맑고 투명한 텍스처로 본연의 아름다움을 끌어올립니다.<br>
+                        컬러로 감정을 표현하고, 무드로 스타일을 완성하세요.<br>
+                        우리는 메이크업을 통해 ‘지금 이 순간’을 더 아름답게 만듭니다.</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="./vid/vid_2.mp4" loop autoplay muted playsinline></video>
+                </figure>
+            </section>
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>fwee Reviews</h2>
+                    <p>진짜 사용자들의 솔직한 후기!<br>예쁨도, 만족도도 직접 확인해보세요.</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="https://fwee.kr/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">
+                                <h3>Cushion Glass Natural</h3>
+                                <p>맑고 투명한 유리빛 피부, 자연스러운 결 하나까지 빛나게</p>
+                            </a></li>
+                        <li class="sl2"><a href="https://fwee.kr/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">
+                                <h3>More Mood Eye Palette</h3>
+                                <p>기분 따라 골라 쓰는 무드 컬러, 눈 위에 감성을 레이어링</p>
+                            </a></li>
+                        <li class="sl3"><a href="https://fwee.kr/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">
+                                <h3>Glitz Stone Highlighter</h3>
+                                <p>보석처럼 반짝이는 하이라이트 한 방울, 얼굴에 빛을 더하다</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="news">
+                <div class="s_tit">
+                    <h2>fwee Events</h2>
+                    <p>예쁨 가득한 순간, 지금 fwee 이벤트에서 확인하세요.</p>
+                    <a href="https://fwee.kr/board/notice/8/" class="more">View More &gt;</a>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t1.png" alt=""></div>
+                                <p class="txt">
+                                    당신의 봄을 더 촉촉하게 – 글로우팩트 체험 이벤트
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t2.png" alt=""></div>
+                                <p class="txt">
+                                    건조한 입술은 그만, 글로우 립글로즈 100% 증정 이벤트
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t3.png" alt=""></div>
+                                <p class="txt">
+                                    오늘은 볼에 꽃을 피우는 날 – 글로우 치크 증정중!
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t4.png" alt=""></div>
+                                <p class="txt">
+                                    숨기지 말고, 촉촉하게 감춰봐 – 컨실러 증정 이벤트
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t5.png" alt=""></div>
+                                <p class="txt">
+                                    선명하게, 부드럽게, 나답게 – 립스틱 증정 이벤트
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t6.png" alt=""></div>
+                                <p class="txt">
+                                    달콤하게, 촉촉하게 – 디저트처럼 즐기는 핸드크림
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t7.png" alt=""></div>
+                                <p class="txt">
+                                    선명한 컬러에 글로우 필터 ON – 립틴트 체험 이벤트
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t8.png" alt=""></div>
+                                <p class="txt">
+                                    맑고 투명하게 – 유리알 광택 립글로즈 체험 이벤트
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>Contact Us</h3>
+            <p>당신의 색을 함께 찾는<br>
+                트렌디 뷰티 파트너 <span>fwee 스튜디오</span>입니다.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
