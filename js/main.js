@@ -153,4 +153,18 @@ $(function() {
             slideShadows: false,
         },
     });
+        let swipers = new Swiper(".main_cards", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        speed: 600,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 120,
+            depth: 400,
+            modifier: 1,
+            slideShadows: false,
+        },
+         });
 });

@@ -14,18 +14,18 @@
     }
 
     .inner {
-        width: 330px;
+        width: 350px;
         /* height: 100vh; */
         margin: 0 auto;
     }
 
     .minner {
-        width: 330px;
+        width: 350px;
         margin: 0 auto;
     }
 
     .maininner {
-        width: 330px;
+        width: 350px;
         margin: 0 auto;
     }
 
@@ -46,8 +46,8 @@
     }
 
     .txt_back {
-        width: 400px;
-        height: 800px;
+        width: 100%;
+        height: 90vh;
         background-image: url(../img/back_txtw.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -160,7 +160,7 @@
     }
 
     .nav-container {
-        padding-top: 80px;
+        padding-top: 50px;
         display: flex;
         justify-content: center;
         margin-top: 40px;
@@ -174,12 +174,12 @@
         display: block;
         border-radius: 999px;
         width: 100px;
-        height: 30%;
+        height: 40%;
         background: #1E1E1E;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         position: absolute;
         left: 0;
-        top: 76%;
+        top: 70%;
         transform: translateY(-35%);
         transition: .2s;
         /*  margin-left: 10px; */
@@ -256,8 +256,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 320px;
-        height: 300px;
+        width: 380px;
+        height: 400px;
         position: relative;
         /* background: pink; */
         /*     border-radius: 20px;
@@ -279,12 +279,12 @@
     .c_home .web_cards ul li a.visit_btn {
         position: absolute;
         left: 50%;
-        top: 55%;
+        top: 60%;
         transform: translate(-50%, -50%);
         background: #63E6A4;
         color: var(--back-color);
-        width: 20px;
-        height: 10px;
+        width: 100px;
+        height: 40px;
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -303,7 +303,7 @@
         background: #63E6A4;
         color: var(--back-color);
         width: 100px;
-        height: 50px;
+        height: 40px;
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -317,5 +317,98 @@
 
     .swiper-slide-next {
         opacity: 1 !important;
+    }
+
+    /* 제품 */
+    .c_projects {
+        background: var(--back-color);
+        width: 100%;
+    }
+
+    .big_box {
+        display: flex;
+        margin-top: 50px;
+        /* background: #ccc; */
+    }
+
+    .left_box {
+        position: sticky;
+        /* background: blue; */
+        top: 0;
+        margin-right: 25px;
+        height: 100%;
+    }
+
+    .left_box .onclick {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left_box .onclick img {
+        width: 50px;
+    }
+
+    .right_box {
+        width: 100%;
+        height: 650px;
+        /* height: 100%; */
+        /*     background: #f2f2f2; */
+    }
+
+    .right_box .box.on {
+        display: flex;
+    }
+
+    .right_box .box {
+        width: 100%;
+        /* height: 100%; */
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 335px;
+    }
+
+    .right_box .box li img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 230px;
+    }
+
+    /* aboutme */
+    .txtanibox {
+        margin-top: 50px;
+        width: 100%;
+        height: 10vh;
+        background: rgba(255, 255, 255, 0.30);
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        align-content: center;
+    }
+
+    .simply-scroll {
+        width: 100%;
+    }
+
+    .simply-scroll .simply-scroll-clip {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .txtanibox #txtani {
+        width: 100%;
+        display: flex;
+        transform-origin: left center;
+        white-space: nowrap;
+    }
+
+    .txtanibox #txtani li {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "Noto Serif KR", serif;
+        color: var(--point-color);
+        margin-right: 30px;
+    }
+    .about_box .left img{
+        width: 118px;
     }
 }

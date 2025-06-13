@@ -330,7 +330,7 @@ canvas {
     justify-content: center;
     margin-top: 40px;
     position: relative;
-    width: 810px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -508,7 +508,99 @@ canvas {
     opacity: 1 !important;
 }
 
+/* team */
+.c_home .main_cards ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.c_home .main_cards ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 819px;
+    height: 700px;
+    position: relative;
+    /* background: pink; */
+    /*     border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.c_home .main_cards ul li img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.c_home .main_cards ul li:hover img {
+    opacity: .8;
+}
+
+.main_cards .swiper-slide img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    display: flex;
+}
+
+.c_home .main_cards ul li a.visit_btn {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background: #63E6A4;
+    color: var(--back-color);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.c_home .main_cards ul li:hover a.visit_btn {
+    opacity: 1;
+}
+
+.c_home .main_cards ul li a {
+    display: flex;
+}
+
+.c_home .main_cards ul li a.label {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    background: #63E6A4;
+    color: var(--back-color);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.c_home .main_cards ul li:hover a.label {
+    /* display: flex; */
+    opacity: 1;
+}
+
+
+/* Hover 시 Glow 효과 */
+
+.main_cards .swiper-slide img:hover {
+    box-shadow: 0 0 15px var(--point-color);
+    /* 푸른빛 Glow */
+    transform: scale(1.03);
+    /* 약간 확대 */
+}
+/* //.team */
 /* projects */
 
 .c_projects {
