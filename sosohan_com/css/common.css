@@ -1,0 +1,26 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+폰트,변수선언(컬러)///
+*/
+* {box-sizing: border-box;}
+:root{
+    --main-font-family :'';
+    --main-color: #183425;
+    --main-color: #FCECDF;
+    --main-color: #ffffff;
+    --main-color: #000000;
+    --main-color: #555555;
+    --main-color: #BF5439;
+    
+}
+.inner{
+    width: 1400px;
+    margin: 0 auto;
+}

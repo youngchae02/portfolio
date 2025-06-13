@@ -13,11 +13,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/young_media.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
@@ -30,29 +30,54 @@
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div class="wrap">
+        <div class="content">
+            <div id="pet" draggable="true"></div>
 
-        <!-- <div class="custom_cursor "></div> --><!-- //.custom_cursor -->
+        </div>
+
+        <!-- <div class="custom_cursor "></div> -->
+        <!-- //.custom_cursor -->
         <section class="circle">
-
-
-        </section><!-- //.circle -->
+            <video id="bg_video" autoplay muted loop playsinline>
+                <source src="./vid/vid_1.mp4" type="video/mp4" autoplay muted loop />
+            </video>
+            <script>
+                const video = document.getElementById('myVideo');
+                video.playbackRate = 0.2; // 0.5배 느리게 (1 = 보통 속도)
+            </script>
+        </section>
+        <!-- //.circle -->
+        <!-- 텍스트이미지 및 라인별 -->
         <div class="txt_back">
+            <!-- 풀이미지 -->
+            <ul class="scrolls">
+                <li data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1500" data-aos-duration="500"><img class="grass1" src="./img/scroll_g1.png" alt="풀1"></li>
+                <li data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine"><img class="grass2" src="./img/scroll_g2.png" alt="풀2"></li>
+            </ul>
+            <!-- 별&라인 -->
             <section id="line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5407" viewBox="0 0 10 5407" fill="none">
-                    <path d="M5 0V5406.5" stroke="white" stroke-width="10" class="path_d" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="3074" viewBox="0 0 6 3074" fill="none">
+                    <path d="M3 0L3.00013 3074" stroke="#76FFAF" stroke-width="10" class="path_d" />
                 </svg>
                 <img src="./img/Star 2.png" alt="star" id="star_l">
             </section>
-            <ul class="txt_d">
-                <li>Design</li>
-                <li>Less ego,<br>more user</li>
-                <li>Design</li>
-                <li>Design</li>
-                <li>Less ego, <br>more user</li>
-            </ul>
-            <canvas id="embersCanvas" class="star_bg"></canvas><!--  -->
-        </div><!-- //.txt_back -->
+            <!-- 텍스트 -->
+            <div class="maininner">
+                <ul class="txt_d">
+                    <li>Lights that never fade,<br> a story that that keeps blooming</li>
+                    <li>사라지지 않는 <span>빛</span>,<br>계속 피어나는 <span>이야기</span></li>
+                    <li>A <span>Story </span>of <span>Youngchae</span></li>
+                    <li>Evergarden</li>
+                    <li>시들지 않는 <span>빛</span>,<br>영원히 피어나는 <span>정원</span></li>
+                </ul>
+            </div>
+            <!-- <canvas id="embersCanvas" class="star_bg"></canvas> -->
+        </div>
+        <!-- //.txt_back -->
 
         <div class="home_main">
             <div class="nav-container">
@@ -68,14 +93,29 @@
                     <div class="minner">
                         <section class="web_cards swiper">
                             <ul class="swiper-wrapper">
-                                <li class="swiper-slide"><a href="https://www.figma.com/proto/qO2kyLWFy3hnj0T7U7G4wY/%EA%B9%80%EC%98%81%EC%B1%84?page-id=728%3A115&node-id=950-352&viewport=-1147%2C-1488%2C0.1&t=dyzLIqRITVVtHC1G-1&scaling=min-zoom&content-scaling=fixed" target="_blank"><img src="./img/sosohan.png" alt="소소한" ></a></li>
-                                <li class="swiper-slide"><a href="./eatz_com/index.html"target="_blank"><img src="./img/eatz.png" alt="롯데잇츠"></a></li>
-                            <!--     <li class="swiper-slide"><a href="#"><img src="./img/ontour.png" alt="온투어"></a></li> -->
-                                <li class="swiper-slide"><a href="./company/index.html"target="_blank"><img src="./img/fwee.png" alt="fwee"  ></a></li>
+                                <li class="swiper-slide">
+                                    <img src="./img/sosohan.png" alt="소소한">
+                                    <a href="https://www.figma.com/proto/qO2kyLWFy3hnj0T7U7G4wY/%EA%B9%80%EC%98%81%EC%B1%84?page-id=728%3A115&node-id=950-352&viewport=-1147%2C-1488%2C0.1&t=dyzLIqRITVVtHC1G-1&scaling=min-zoom&content-scaling=fixed" class="label" target="_blank">review</a>
+                                    <a href="./sosohan_com/index.html" target="_blank" class="visit_btn">Visit</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./img/eatz.png" alt="롯데잇츠">
+                                    <a href="https://www.figma.com/proto/qO2kyLWFy3hnj0T7U7G4wY/%EA%B9%80%EC%98%81%EC%B1%84?node-id=1195-179&t=OZ1bciXMli8JBgY5-1&scaling=min-zoom&content-scaling=fixed&page-id=728%3A115" target="_blank" class="label">review</a>
+                                    <a href="./eatz_com/index.html" target="_blank" class="visit_btn">Visit</a>
+                                </li>
+                                <!--     <li class="swiper-slide"><a href="#"><img src="./img/ontour.png" alt="온투어"></a></li> -->
+                                <li class="swiper-slide">
+                                    <img src="./img/fwee.png" alt="fwee">
+                                    <a href="https://www.figma.com/proto/qO2kyLWFy3hnj0T7U7G4wY/%EA%B9%80%EC%98%81%EC%B1%84?node-id=1451-189&t=4qAzPioP5Xjek2wu-1&scaling=min-zoom&content-scaling=fixed&page-id=728%3A115" target="_blank" class="label">review</a>
+                                    <a href="./company/index.html" target="_blank" class="visit_btn">Visit</a>
+                                </li>
                             </ul>
-                        </section><!-- //.web_cards -->
-                    </div><!-- //.minner -->
-                </article><!-- //.home -->
+                        </section>
+                        <!-- //.web_cards -->
+                    </div>
+                    <!-- //.minner -->
+                </article>
+                <!-- //.home -->
 
 
                 <!-- projects -->
@@ -85,27 +125,41 @@
 
                             <div class="left_box">
                                 <ul class="onclick">
-                                    <li class="product on"><img src="./img/option1.png" alt="product"  target="_blank"></li>
-                                    <li class="package"><img src="./img/option2.png" alt="package"  target="_blank"></li>
+                                    <li class="product on"><img src="./img/option1.png" alt="product" target="_blank">
+                                    </li>
+                                    <li class="package"><img src="./img/option2.png" alt="package" target="_blank"></li>
                                 </ul>
                             </div>
-
                             <div class="right_box">
                                 <ul class="box product on">
-                                    <li><a href="#"><img src="./img/Product1.png" alt="tpot"></a></li>
-                                    <li><a href="#"><img src="./img/Product2.png" alt="hi_wing"></a></li>
-                                    <li><a href="#"><img src="./img/Product3.png" alt="millie"></a></li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product1.png" alt="tpot"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product2.png" alt="hi_wing"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product3.png" alt="millie"></a>
+                                    </li>
                                 </ul>
                                 <ul class="box package">
-                                    <li><a href="#"><img src="./img/Product4.png" alt="scents"></a></li>
-                                    <li><a href="#"><img src="./img/Product5.png" alt="harang"></a></li>
-                                    <li><a href="#"><img src="./img/Product6.png" alt="harrypotter"></a></li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product4.png" alt="scents"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product5.png" alt="harang"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/Product6.png" alt="harrypotter"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </section>
 
-                    </div><!-- //.inner -->
-                </article><!-- //.projects -->
+                    </div>
+                    <!-- //.inner -->
+                </article>
+                <!-- //.projects -->
 
                 <!-- aboutme -->
                 <article class="tab-content c_aboutme">
@@ -132,21 +186,23 @@
                                 <li>About Me</li>
                                 <li>About Me</li>
                                 <li>About Me</li>
-                            </ul><!--//.txtani  -->
-                        </div><!-- //.txtanibox -->
+                            </ul>
+                            <!--//.txtani  -->
+                        </div>
+                        <!-- //.txtanibox -->
                         <div class="inner">
                             <div class="about_box">
                                 <div class="left">
                                     <img src="./img/my-img.png" alt="김영채">
-                                </div><!-- //.left -->
+                                </div>
+                                <!-- //.left -->
                                 <div class="right">
                                     <div class="top">
                                         <div class="txt1">
                                             <h2><span>꽃잎</span>처럼 피어나는 디자이너 김영채</h2>
-                                            <p>저는 매 작품이 마치 꽃잎처럼 자연스럽게 피어나는 디자이너입니다<br>
-                                                작은 아이디어에서 시작해, 시간이 지날수록 깊이 있는 감성으로 완성됩니다<br>
-                                                따뜻한 감성을 담아 사람들의 마음에 피어나는 디자인을 만들고자 합니다</p>
-                                        </div><!-- //.txt1 -->
+                                            <p>저는 매 작품이 마치 꽃잎처럼 자연스럽게 피어나는 디자이너입니다<br> 작은 아이디어에서 시작해, 시간이 지날수록 깊이 있는 감성으로 완성됩니다<br> 따뜻한 감성을 담아 사람들의 마음에 피어나는 디자인을 만들고자 합니다</p>
+                                        </div>
+                                        <!-- //.txt1 -->
                                         <div class="school">
                                             <ul class="s1">
                                                 <li>한양여자대학교 졸업</li>
@@ -158,8 +214,10 @@
                                                 <li>산업디자인과</li>
                                                 <li>(2024.03 - 2025.02)</li>
                                             </ul>
-                                        </div><!-- //.school -->
-                                    </div><!-- //.top -->
+                                        </div>
+                                        <!-- //.school -->
+                                    </div>
+                                    <!-- //.top -->
                                     <div class="bottom">
                                         <div class="txt_box">
                                             <ul class="a">
@@ -179,7 +237,8 @@
                                                 <li>개인</li>
                                                 <li>조장</li>
                                             </ul>
-                                        </div><!-- //.txt_box -->
+                                        </div>
+                                        <!-- //.txt_box -->
                                         <div class="tool_box">
                                             <div class="tool1">
                                                 <img src="./img/tool_1.png" alt="라이노">
@@ -202,26 +261,36 @@
                                             <div class="tool7">
                                                 <img src="./img/tool_7.png" alt="xd">
                                             </div>
-                                        </div><!-- //.tool_box -->
-                                    </div><!-- //.bottom -->
-                                </div><!-- //.right -->
-                            </div><!-- //.about_box -->
+                                        </div>
+                                        <!-- //.tool_box -->
+                                    </div>
+                                    <!-- //.bottom -->
+                                </div>
+                                <!-- //.right -->
+                            </div>
+                            <!-- //.about_box -->
 
                             <div class="email">
                                 <ul>
                                     <li>Kim Youngchae | 2025</li>
                                     <li>godolo3@naver.com</li>
                                 </ul>
-                            </div><!-- //.email -->
+                            </div>
+                            <!-- //.email -->
 
                             <div class="thank">
                                 <img src="./img/thankyou.png" alt="thankyou">
-                            </div><!-- //.thank -->
-                        </div><!-- //.inner -->
-                    </div><!-- //.about_big -->
-                </article><!-- //.aboutme -->
+                            </div>
+                            <!-- //.thank -->
+                        </div>
+                        <!-- //.inner -->
+                    </div>
+                    <!-- //.about_big -->
+                </article>
+                <!-- //.aboutme -->
             </div>
-        </div><!-- //.home_main -->
+        </div>
+        <!-- //.home_main -->
 
 
 
@@ -237,7 +306,8 @@
 
 
 
-    </div><!-- //.wrap -->
+    </div>
+    <!-- //.wrap -->
 </body>
 
 </html>

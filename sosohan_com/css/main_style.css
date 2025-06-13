@@ -1,0 +1,860 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* 메인비주얼 */
+header {
+    background-image: url(../img/main1.png);
+    object-fit: cover;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    /* background: pink; */
+}
+
+header .inner {
+    height: 100%;
+    /* background: #ccc; */
+}
+
+header .top {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .top h1 {
+    height: 80px;
+    /* background: blue; */
+}
+
+header .top h1 img {
+    width: 0 auto;
+    height: 80px;
+}
+
+header .top nav {
+    width: 100%;
+    height: 100px;
+    /* background: blanchedalmond; */
+}
+
+header .top nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+
+header .top nav ul li {
+    font-size: 24px;
+    color: #183425;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/*  */
+header .top nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #183425;
+    /* 밑줄 색상 */
+    transition: all 0.3s ease-in-out;
+    /* 부드러운 효과 */
+    transform: translateX(-50%);
+}
+
+header .top nav ul li:hover::after {
+    width: 100%;
+}
+
+/*  */
+header .txt_wrap {
+    height: 860px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 200px;
+}
+
+header .txt_wrap .txt {
+    width: 602px;
+    height: 318px;
+    text-align: center;
+    /* background: salmon; */
+}
+
+header .txt_wrap .txt span {
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    color: #fff;
+    background: #183425;
+    padding: 10px;
+    opacity: 0;
+    /* 처음에는 투명 */
+    transform: translateY(20px);
+    /* 처음엔 약간 아래 위치 */
+    animation: fadeInUp 3s ease-out forwards;
+    /* 애니메이션 적용 */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header .txt_wrap .txt h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 58px;
+    color: #183425;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    opacity: 0;
+    /* 처음에는 투명 */
+    transform: translateY(20px);
+    /* 처음엔 약간 아래 위치 */
+    animation: fadeInUp 3s ease-out forwards;
+    /* 애니메이션 적용 */
+}
+
+header .txt_wrap .txt h3 strong {
+    font-family: 'Pretendard-Regular';
+    font-weight: 500;
+}
+
+header .txt_wrap .txt h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 24px;
+    color: #183425;
+    line-height: 30px;
+    opacity: 0;
+    /* 처음에는 투명 */
+    transform: translateY(20px);
+    /* 처음엔 약간 아래 위치 */
+    animation: fadeInUp 4s ease-out forwards;
+    /* 애니메이션 적용 */
+}
+
+
+
+
+
+
+
+
+/* top10소품샵 */
+.top1 {
+    width: 100%;
+    height: 1157px;
+    /* background: #000; */
+}
+
+.top1 .inner {
+    height: 100%;
+    /* background: #2d2d2d; */
+}
+
+.top1 .top {
+    width: 100%;
+    height: 500px;
+    /* background: olive; */
+}
+
+.top1 .top h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 80px;
+    color: #183425;
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+.top1 .top span {
+    font-family: 'Pretendard-Regular';
+    font-size: 70px;
+}
+
+.top1 .top .line_box {
+    display: flex;
+    padding-top: 50px;
+}
+
+.top1 .top .line_box h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 25px;
+    font-weight: 600;
+    color: #183425;
+    border-top: 1px solid #183425;
+    padding-top: 10px;
+    margin-right: 50px;
+}
+
+.top1 .top .line_box span {
+    font-family: 'Pretendard-Regular';
+    font-size: 25px;
+    font-weight: 400;
+    color: #183425;
+    padding-top: 10px;
+    border-top: 1px solid #183425;
+}
+
+.top1 .inner .top_b {
+    width: 100%;
+    height: 390px;
+    padding-top: 112px;
+    /* background: red; */
+}
+
+.top1 .inner .top_b .slide {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 112px;
+}
+.top1 .inner .top_b .slide .list1{
+    width: 210px;
+    height: 390px;
+    margin-right: 153px;
+    /* background: yellow; */
+}
+
+.top1 .inner .top_b .slide .list1 .txt_box {
+    width: 210px;
+    height: 130px;
+    /* background: pink; */
+}
+
+.top1 .inner .top_b .slide .list1 .txt_box h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    color: #222;
+}
+
+.top1 .inner .top_b .slide .list1 .txt_box p {
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    font-weight: 200;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.top1 .inner .top_b .slide .list1 .txt_box span {
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+}
+
+
+/* 큰사진2 */
+.con1 {
+    width: 100%;
+    height: 2123px;
+    background: #fff;
+    flex-direction: column;
+}
+
+.con1 .inner {
+    height: 2123px;
+    /* background: red; */
+}
+
+.con1 .trendy1 {
+    height: 970px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    /* background: greenyellow; */
+}
+
+.con1 .inner .trendy1 .txt {
+    width: 204px;
+    height: 970px;
+    margin-right: 72px;
+    border-top: 1px solid #183425;
+    /* background: #183425; */
+}
+
+.con1 .inner .trendy1 .txt h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: #183425;
+}
+
+.con1 .inner .trendy1 .list {
+    width: 214px;
+    height: 970px;
+    margin-left: 10px;
+    /* background: pink; */
+}
+
+.con1 .inner .trendy1 .list .box {
+    width: 214px;
+    height: 970px;
+}
+
+.con1 .inner .trendy1 .list .box h3 {
+    padding-bottom: 94px;
+    color: #2d2d2d;
+    font-size: 17px;
+    line-height: 15px;
+
+}
+
+.con1 .inner .trendy1 .list .box p {
+    padding-bottom: 10px;
+    color: #2d2d2d;
+    font-size: 25px;
+}
+
+.con1 .inner .trendy1 .list .box span {
+    font-family: 'Pretendard-Regular';
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+.con1 .inner .trendy1 .list .box strong {
+    font-family: 'Pretendard-Regular';
+    font-size: 28px;
+    font-weight: 700;
+    color: #BF5439;
+}
+
+/* ///////////////////////////////////////// */
+.con1 .inner .trendy2 {
+    height: 970px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: greenyellow; */
+}
+
+.con1 .inner .trendy2 .list {
+    width: 214px;
+    height: 970px;
+    margin-right: 62px;
+    /* background: pink; */
+}
+
+.con1 .inner .trendy2 .list .box {
+    width: 214px;
+    height: 970px;
+}
+
+.con1 .inner .trendy2 .list .box h3 {
+    padding-bottom: 94px;
+    color: #2d2d2d;
+    font-size: 17px;
+}
+
+.con1 .inner .trendy2 .list .box p {
+    padding-bottom: 10px;
+    color: #2d2d2d;
+    font-size: 25px;
+}
+
+.con1 .inner .trendy2 .list .box span {
+    font-family: 'Pretendard-Regular';
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+.con1 .inner .trendy2 .list .box strong {
+    font-family: 'Pretendard-Regular';
+    font-size: 28px;
+    font-weight: 700;
+    color: #BF5439;
+}
+
+.con1 .inner .trendy2 .txt {
+    width: 204px;
+    height: 970px;
+    border-top: 1px solid #183425;
+    margin-left: 20px;
+    /* background: #183425; */
+}
+
+.con1 .inner .trendy2 .txt h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: #183425;
+}
+
+
+
+
+/* top 10소품 */
+.top2 {
+    width: 100%;
+    height: 1160px;
+    background: #FCECDF;
+    position: relative;
+}
+
+.top2 .inner .top {
+
+    height: 500px;
+    /* background: #FCECDF; */
+}
+
+.top2 .inner .top h2 {
+    font-size: 80px;
+    color: #183425;
+    font-weight: 600;
+    padding-top: 290px;
+}
+
+.top .inner .top span {
+    font-size: 70px;
+}
+
+.top2 .top_b2 {
+    width: 100%;
+    height: 660px;
+    /* background: #222; */
+}
+
+.top2 .top_b2 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 140px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.top2 .top_b2 ul li:hover {}
+
+.top2 .top_b2 ul li {
+    width: 380px;
+    height: 380px;
+}
+
+.top2 .top_b2 ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.top2 .swiper-pagination {
+    padding-bottom: 100px;
+}
+/* Swiper 페이지네이션 점 색상 변경 */
+.top2 .swiper-pagination-bullet-active {
+    background-color: #183425; /* 활성화된 점 색상 */
+}
+
+/* lucky draw */
+.draw {
+    width: 100%;
+    height: 1700px;
+    background: #183425;
+}
+
+.draw .top {
+    width: 100%;
+    height: 500px;
+    background: #183425;
+}
+
+.draw .inner {
+    height: 1700px;
+    /* background: #000; */
+
+}
+
+.draw .inner .top h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 80px;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+.draw .inner .top span {
+    font-family: 'Pretendard-Regular';
+    font-size: 70px;
+}
+
+.draw .top_b .img1_list ul {
+    display: flex;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+
+.draw .top_b ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.draw .top_b ul li:hover {
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+}
+
+.draw .top_b ul li span {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+    line-height: 40px;
+}
+
+.draw .top_b ul li:hover span {
+    opacity: 1;
+    animation: fadeInUp 2s ease-out forwards;
+}
+.draw .top_b .img2_list ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* designer pick */
+.pick {
+    width: 100%;
+    height: 2400px;
+    background: #FCECDF;
+}
+
+.pick .top {
+    width: 100%;
+    height: 500px;
+    background: #FCECDF;
+}
+
+.pick .inner .top h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 80px;
+    color: #183425;
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+.pick .inner .top span {
+    font-family: 'Pretendard-Regular';
+    font-size: 70px;
+}
+
+.pick .top_b {
+    width: 100%;
+    height: 1900px;
+    /* background: peru; */
+}
+
+.pick .top_b .img {
+    padding-bottom: 50px;
+}
+
+.pick .top_b .inner {
+    height: 1900px;
+    background: hotpink;
+}
+
+.pick .top_b .inner .img {
+    width: 100%;
+    height: 615px;
+    background: navy;
+}
+
+.pick .top_b .txt1 {
+    width: 100%;
+    height: 233px;
+    /* background: fuchsia; */
+    margin-bottom: 100px;
+}
+
+.pick .top_b .txt1 h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.pick .top_b .txt1 h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.pick .top_b .txt2 {
+    width: 100%;
+    height: 473px;
+    /* background: #555; */
+}
+
+.pick .top_b .txt2 h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.pick .top_b .txt2 h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    font-weight: 400;
+    color: #2d2d2d;
+    margin-bottom: 50px;
+}
+
+.pick .top_b .txt2 span {
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+/* sosohan event */
+.event {
+    width: 100%;
+    height: 1200px;
+    background: #fff;
+    position: relative;
+}
+
+.event .top {
+    width: 100%;
+    height: 500px;
+}
+
+.event .swiper-eventb2 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.event .swiper-eventb2 .slide_img {
+    display: flex;
+}
+
+.event .swiper-eventb2 .txt {
+    position: absolute;
+    bottom: 60px;
+    /* 아래 여백 */
+    right: 150px;
+    /* 오른쪽 여백 */
+    width: 600px;
+    /* 너비 조정 */
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* 텍스트 스타일 */
+.event .swiper-eventb2 .txt h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    line-height: 55px;
+}
+
+.event .swiper-eventb2 .txt h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 38px;
+}
+
+.event .inner .top h2 {
+    font-family: 'Pretendard-Regular';
+    font-size: 80px;
+    color: #183425;
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+.event .inner .top span {
+    font-family: 'Pretendard-Regular';
+    font-size: 70px;
+}
+
+/*Swiper 버튼 스타일 */
+.event .swiper-button-next,
+.event .swiper-button-prev {
+    color: #ffffff;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event .swiper-button-next::after,
+.event .swiper-button-prev::after {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 버튼 hover */
+.event .swiper-button-next:hover,
+.event .swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.event .swiper-button-next {
+    right: 20px;
+    /* 오른쪽 버튼 위치 */
+}
+
+.event .swiper-button-prev {
+    left: 20px;
+    /* 왼쪽 버튼 위치 */
+}
+/* Swiper 페이지네이션 점 색상 변경 */
+.event .swiper-pagination-bullet-active {
+    background-color: #183425; /* 활성화된 점 색상 */
+}
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 434px;
+    /* background: #000; */
+}
+
+footer .t_inner {
+    width: 100%;
+    height: 192px;
+    /* background: pink; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .t_inner img {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+}
+
+footer .txt_inner {
+    width: 100%;
+    height: 35px;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .txt_inner .txt {
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+footer .txt1_inner {
+    width: 100%;
+    height: 29px;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .txt1_inner h3 {
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+footer .sns_inner {
+    width: 100%;
+    height: 40px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .sns_inner .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .last_txt {
+    width: 100%;
+    height: 138px;
+    /* background: #BF5439; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+footer .last_txt h3 {
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    color: #2d2d2d;
+}

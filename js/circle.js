@@ -11,9 +11,9 @@ const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerH
 camera.position.set(0, 0, 800);
 
 // 렌더러 설정
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, });
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x1e1e1e);
+renderer.setClearColor(0x000000, 0);
 const section = document.querySelector('.circle');
 section.appendChild(renderer.domElement);
 
@@ -35,8 +35,8 @@ const textMaterial = new THREE.MeshBasicMaterial({
 const loader = new FontLoader();
 let fontMain, fontSub;
 const textRows = [
-    "YOUNG CHAE",
-    "**2023** **2024** **2025** Less ego,more user UIUX Product Package"
+    "Evergarden",
+    "A Story of Youngchae"
 ];
 loader.load('./fonts/gentilis_regular.typeface.json', (loadedFont1) => {
     fontMain = loadedFont1;
@@ -53,8 +53,8 @@ function createTextDount() {
         const letters = [...text];
         const angleStep = (2 * Math.PI) / letters.length;
         const yOffset = rowIndex === 0 ? 60 : -60; // 위/아래 줄 위치
-        const fontSize = rowIndex === 0 ? 86 : 20;  // 줄마다 글자 크기 다르게
-        const font = rowIndex === 0 ? fontMain : fontSub;  // 폰트 다르게
+        const fontSize = rowIndex === 0 ? 86 : 20; // 줄마다 글자 크기 다르게
+        const font = rowIndex === 0 ? fontMain : fontSub; // 폰트 다르게
         letters.forEach((char, i) => {
             const angle = i * angleStep;
             const x = Math.cos(angle) * radius;
@@ -82,7 +82,33 @@ function createTextDount() {
 
 // 마우스 드래그로 수평, 수직 회전 제어하기
 let isDragging = false;
+let previousMousePosition = { x: 0, y: 0 };
 
+document.addEventListener("pointerdown", (e) => {
+    isDragging = true;
+    previousMousePosition.x = e.clientX;
+    previousMousePosition.y = e.clientY;
+});
+
+document.addEventListener("pointermove", (e) => {
+    if (isDragging) {
+        const deltaX = e.clientX - previousMousePosition.x;
+        const deltaY = e.clientY - previousMousePosition.y;
+
+        // 수평 회전: Y축
+        group.rotation.y += deltaX * 0.005;
+        // 수직 회전: X축 (단, 너무 많이 회전하면 안되게 클램프 처리)
+        group.rotation.x += deltaY * 0.005;
+        group.rotation.x = THREE.MathUtils.clamp(group.rotation.x, THREE.MathUtils.degToRad(10), THREE.MathUtils.degToRad(70));
+
+        previousMousePosition.x = e.clientX;
+        previousMousePosition.y = e.clientY;
+    }
+});
+
+document.addEventListener("pointerup", () => {
+    isDragging = false;
+});
 
 // 자동 회전 (사용자 조작 없을 때)
 function animate() {

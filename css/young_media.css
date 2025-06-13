@@ -1,0 +1,114 @@
+@media (max-width: 375px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .wrap {
+        width: 100%;
+        background: var(--back-color);
+        /* overflow-x: hidden; */
+    }
+
+    .inner {
+        width: 330px;
+        /* height: 100vh; */
+        margin: 0 auto;
+    }
+
+    .minner {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .maininner {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    #line {
+        display: none;
+    }
+
+    .path_d {
+        display: none;
+    }
+
+    #star_l {
+        display: none;
+    }
+
+    #pet {
+        display: none;
+    }
+
+    .txt_d li {
+        flex-shrink: 0;
+    }
+
+    .txt_d li:nth-child(1) {
+        color: var(--pointsub-color);
+        font-size: 15px;
+        font-family: "Noto Serif KR", serif;
+        padding-left: 10px;
+        font-weight: 900;
+        line-height: 23px;
+    }
+
+    .txt_d li:nth-child(2) {
+        color: var(--pointsub-color);
+        font-size: 15px;
+        font-family: "Noto Serif KR", serif;
+        padding-left: 70px;
+        padding-top: 70px;
+        line-height: 23px;
+        font-weight: 200;
+    }
+
+    .txt_d li:nth-child(2) span {
+        color: var(--font-color);
+    }
+
+    .txt_d li:nth-child(3) {
+        color: var(--pointsub-color);
+        font-size: 25px;
+        font-family: "Noto Serif KR", serif;
+        padding-left: 95px;
+        font-weight: 400;
+        padding-top: 50px;
+    }
+
+    .txt_d li:nth-child(3) span {
+        font-weight: 600;
+        color: var(--font-color);
+        opacity: 0.5;
+    }
+
+    .txt_d li:nth-child(4) {
+        color: var(--font-color);
+        font-size: 25px;
+        font-family: "Noto Serif KR", serif;
+        padding-left: 1132px;
+        padding-top: 75px;
+        font-weight: 500;
+        opacity: 0.6;
+    }
+
+    .txt_d li:nth-child(5) {
+        color: var(--pointsub-color);
+        font-size: 15px;
+        font-family: "Noto Serif KR", serif;
+        padding-left: 95px;
+        line-height: 23px;
+        padding-top: 20px;
+        font-weight: 200;
+    }
+
+    .txt_d li:nth-child(5) span {
+        color: var(--font-color);
+        font-weight: 600;
+    }
+}
