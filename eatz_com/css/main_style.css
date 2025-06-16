@@ -60,7 +60,6 @@ header {
 .top .top_txt .left {
     display: flex;
     gap: 3vw;
-    padding-left: 3vw;
 }
 
 .top .top_txt .left li a {
@@ -97,7 +96,11 @@ header {
     border-bottom: 2px solid#fff;
     padding-bottom: 5px;
 }
-
+.top h1 img{
+    margin-left: 120px;
+    width: 120px;
+    object-fit: contain;
+}
 /* 메인슬라이드 */
 .mainslide {
     width: 100%;
@@ -133,27 +136,27 @@ header {
     position: absolute;
     z-index: 3;
     top: 55%;
-    padding: 20px;
+    padding: 50px;
 }
 
 .mainslide .txt_wrap .txt span {
     font-family: 'NanumSquare Neo';
-    font-size: 65px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
 
 .mainslide .txt_wrap .txt h2 {
     font-family: 'NanumSquare Neo';
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 400;
     padding-top: 10px;
     color: #fff;
 }
 
 .mainslide .txt_wrap .txt p {
     font-family: 'NanumSquare Neo';
-    font-size: 105px;
+    font-size: 90px;
     font-weight: 900;
     padding-top: 30px;
     color: #00A5B9;
